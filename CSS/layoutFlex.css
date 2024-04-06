@@ -64,6 +64,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
 }
@@ -83,21 +84,29 @@ body {
 }
 
 .item1 {
-    height: 250px;
-    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-basis: 20%;
+    align-self: baseline;
 }
 
 .item2 {
-    height: 250px;
-    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-basis: 20%;
+    align-self: baseline;
 }
 .item3 {
-    height: 250px;
-    width: 250px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-basis: 20%;
+    align-self: baseline;
 }
 .item4 {
-    height: 520px;
-    width: 300px;
+    flex-grow: 0;
+    flex-shrink: 2;
+    flex-basis: 20%;
+    align-self: baseline;
 }
 .imagem{
     width: 100%;
@@ -105,27 +114,11 @@ body {
 .imagem img{
     width: 100%;
 }
-@media screen and (max-width:1200px) {
-    .corpo{
-        width: 100%;
-        margin: 0;
-        padding: 5px;
-    }
 
-   .container{
-        float: none;
-        width: 250%; 
-        margin: 0;
-        flex-direction: column;
-        align-content: flex-start;
-       
-    }
-}
-@media screen and (max-width) {
-    .menuTopo ul li, .menuTopo a, .menuTopo ul{
-        float: none;
-        width: 100%; 
-        margin: 0;
-    }
+footer{ 
+    padding: 7px;
+    text-align: center;
+    background-color:rgb(250, 154, 170);
+    color: rgb(97, 26, 49);
     
 }
